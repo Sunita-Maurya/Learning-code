@@ -1,0 +1,32 @@
+psudocode for polyfill of array filter method
+- method create
+- attach method to Array prototype object
+- method will receive only a callback function
+- we will create a resultant array to final return
+- we will iterate till the length of array
+- call the callback function in the loop with current value
+- check the return value of callback
+- if true then push element in an array
+- return array
+
+array reduce method working
+-reduce method accept two argument first is callback second is initialValue wichever you want which is optional
+-if you give initialValue then at first time assign  in accumulator and in the current value arr[0] in not gives initialValue then accumulator arr[0] and currentValue is arr[1]
+
+
+psudocode for polyfill of array reduce method
+- attach method to Array prototype object
+- method will receive  a callback function and initialValue
+-if initialValue exist then assign initialValue  to the accumulator and arr[0] value assign in currentValue
+-if not exist initialValue then arr[0] value assign to accumulator arr[1] value assign to currentValue
+
+psudocode for split polyfill of array reduce method
+- attach method to string prototype object
+-method will receive two paramenter one is separator and second is limit which is optional.
+-we will create a result array becouse of it returs a Array.
+-we will iterate string and remove that element which is getting in the paramenter
+-and push the element in an array
+-if given limit then include only element number of limit and lefted element will exclude
+
+psudocode for split string method
+-
